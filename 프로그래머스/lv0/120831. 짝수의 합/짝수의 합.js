@@ -1,7 +1,4 @@
 function solution(n) {
-    var answer = 0;
-    for (let i = 1; i <=n; i++) {
-        if (i % 2 === 0) answer += i;
-    }
-    return answer;
+    var half = Math.floor(n/2);
+    return Math.pow(half,2) + half;
 }
