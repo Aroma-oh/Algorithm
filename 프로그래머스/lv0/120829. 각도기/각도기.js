@@ -1,3 +1,3 @@
 function solution(angle) {
-    return [1, 90, 91, 180].filter(x => angle>=x).length;
+    return angle < 90 ? 1 : angle === 90 ? 2 : angle < 180 ? 3 : 4;
 }
